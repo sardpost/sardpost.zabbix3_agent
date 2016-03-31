@@ -1,7 +1,8 @@
 Role name: sardpost.zabbix3_agent
 =========
 
-This role installs zabbix-agent (version 3) on RHEL/Centos 7 servers and ensures
+This role installs zabbix-agent (version 3) on RHEL/Centos 7 servers and ensures 
+SELinux context is alligned
 
 Requirements
 ------------
