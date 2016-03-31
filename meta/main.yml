@@ -1,32 +1,14 @@
 ---
 galaxy_info:
-  author: Davide M Puggioni
+  author: Davide Puggioni
   description: Ansible role for installing Zabbix 3 agent on RHEL/Centos 7
-  company: your company (optional)
-  # If the issue tracker for your role is not on github, uncomment the
-  # next line and provide a value
-  # issue_tracker_url: http://example.com/issue/tracker
-  # Some suggested licenses:
-  # - BSD (default)
-  # - MIT
-  # - GPLv2
-  # - GPLv3
-  # - Apache
-  # - CC-BY
-  license: license GPL3
+  company: myCompany.Dotcom
+  license: license (GPLv3)
   min_ansible_version: 1.2
-  #
-  # Below are all platforms currently available. Just uncomment
-  # the ones that apply to your role. If you don't see your 
-  # platform on this list, let us know and we'll get it added!
-  #
   platforms:
    - name: EL
-  #  versions:
-  #  - all
-  #  - 5
-  #  - 6
-   - 7
+     versions:
+     - 7
   #- name: GenericUNIX
   #  versions:
   #  - all
@@ -158,10 +140,10 @@ galaxy_info:
   #- database:nosql
   #- database:sql
   #- development
-   - monitoring
+  - monitoring
   #- networking
   #- packaging
-   - system
+  - system
   #- web
 dependencies: []
   # List your role dependencies here, one per line.
