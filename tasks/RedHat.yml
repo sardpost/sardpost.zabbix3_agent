@@ -39,6 +39,6 @@
   seboolean: name=zabbix_can_network state=yes persistent=yes
 
 
-- name: RedHat | Firewalld | Opening port 10050-10051 tcp
-  firewalld: port=10050-10051/tcp permanent=true state=enabled
+- name: RedHat | Firewalld | Opening port 10050 tcp
+  firewalld: port=10050/tcp permanent=true state=enabled
 
