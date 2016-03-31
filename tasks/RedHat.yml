@@ -25,6 +25,12 @@
     - init
     - config
 
+- name: "RedHat | Copy zabbix_agentd.conf configuration file"
+  copy: src=zabbix_agentd.conf dest=/etc/zabbix/zabbix_agentd.conf
+
+- name: "RedHat | Restore SElinux context of /etc/yum.repos.d/zabbix.repo"
+  command: "/sbin/restorecon -F /etc/zabbix/zabbix_agentd.conf"
+
 
 - name: "RedHat | Install SElinux Boolean module dependencies"
   yum: name=libsemanage-python state=present
