@@ -27,19 +27,19 @@ Example Playbook
 
 Let's assume we have this playbook called zabbix-playbook.yml
 
-- name: Install Zabbix 3 Agent
-  hosts: servers
-  remote_user: centos
-  sudo: yes
+    - name: Install Zabbix 3 Agent
+      hosts: servers
+      remote_user: centos
+      sudo: yes
 
-  roles:
+    roles:
     - sardpost.zabbix3_agent
          
 we can launch the playbook with the command:
 
-ansible-playbook zabbix_playbook.yml -K
+    ansible-playbook zabbix_playbook.yml -K
 
-(-K) parameter is for Ansible to ask sudo password.
+    (-K) parameter is for Ansible to ask sudo password.
          
          
 License
