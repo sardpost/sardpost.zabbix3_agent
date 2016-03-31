@@ -14,8 +14,8 @@ Role Variables
 
 In defaults/main.yml it's possible to specify some variables
 
-zabbix_version: 3.0             to specify the Zabbix main version
-zabbix_repo: True               to specify if you want to run the task to install Zabbix repo
+    zabbix_version: 3.0             (to specify the Zabbix main version)
+    zabbix_repo: True               (to specify if you want to run the task to install Zabbix repo)
 
 Dependencies
 ------------
@@ -26,8 +26,6 @@ Example Playbook
 ----------------
 
 Let's assume we have this playbook called zabbix-playbook.yml
-
---- 
 
 - name: Install Zabbix 3 Agent
   hosts: servers
